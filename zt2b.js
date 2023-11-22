@@ -1,10 +1,9 @@
+// zt2b : zoom-to-bounding-box
 async function mapConstructor()
-// function _chart(d3,topojson,us)
 {
   const width = 975;
   const height = 610;
   const mapURL = 'jsonMaps/states-albers-10m.json'
-  // const mapURL = 'jsonMaps/ne_110m_sjea_countries.json'
   const reponse = await fetch(mapURL)
   const topojsonData = await reponse.json();
   // console.log('topojsonData :',topojsonData);
